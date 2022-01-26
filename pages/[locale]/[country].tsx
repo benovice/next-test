@@ -55,7 +55,7 @@ export default function Country({ country, locale, dictionary }: Props) {
                 src={`/flags/${country}.svg`}
                 width={128}
                 height={96}
-                alt={`counry:${country}`}
+                alt={`country:${country}`}
             />
         </div>
         <div style={{ fontSize: "21px", fontWeight: "bold", paddingTop: "12px" }}>

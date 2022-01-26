@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(req: NextRequest) {
-    const country = req.geo!.country?.toLowerCase() || "ko";
+    const country = req.geo!.country?.toLowerCase() || "kr";
     const locale =
         req.headers.get("accept-language")?.split(",")?.[0] || "ko-KR";
     // Only rewrite files that don't have a file extension
